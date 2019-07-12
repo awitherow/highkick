@@ -1,20 +1,22 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import useGlobal from "./store";
 
 import Home from "./views/Home";
+import Loading from "./views/Loading";
+import Error from "./views/Error";
 
-import "./App.css";
+import "./App.scss";
 
 const App = () => {
-  const [globalState, globalActions] = useGlobal();
+  const [globalState] = useGlobal();
 
   let VIEW_ROUTE = null;
   if (globalState.status === "LOADING") {
-    VIEW_ROUTE = ""; // TODO: loading
+    VIEW_ROUTE = <Loading />;
   } else if (globalState === "ERROR") {
-    VIEW_ROUTE = ""; // TODO: error
+    VIEW_ROUTE = <Error />;
   } else {
     VIEW_ROUTE = (
       <Router>
