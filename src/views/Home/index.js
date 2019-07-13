@@ -1,13 +1,13 @@
 import React from "react";
 
-import useGlobal from "../../store";
+// import useGlobal from "../../store";
 
 import Container from "../../components/Container";
 import ContainerTitle from "../../components/Container/Title";
 import Button from "../../components/Button";
 
 export default function({ updateGlobalState, history }) {
-  const [] = useGlobal();
+  // const [] = useGlobal();
 
   return (
     <div className="view">
@@ -16,12 +16,16 @@ export default function({ updateGlobalState, history }) {
           <ContainerTitle
             title="Dream Journal"
             action={
-              <Button className="primary" text={<i class="fas fa-edit" />} />
+              <Button
+                className="transparent"
+                text={<i className="fas fa-edit" />}
+              />
             }
           />
         }
-        body="Placeholder body here"
-        footer="Explore your subconscious with dream work!"
+        body="Explore your subconscious with dream work through recollective
+        writing."
+        footer="Seek to write vividly, concise, sensory and emotional oriented."
       />
 
       <Container
@@ -29,12 +33,21 @@ export default function({ updateGlobalState, history }) {
           <ContainerTitle
             title="Goals for the Day"
             action={
-              <Button className="primary" text={<i class="fas fa-tasks" />} />
+              <Button
+                className="transparent"
+                text={<i className="fas fa-tasks" />}
+              />
             }
           />
         }
         footer="Select achievable goals for your day!"
-        body="Placeholder body here"
+        body={
+          <ul>
+            <li>The most important thing</li>
+            <li>What comes next</li>
+            <li>and the thing after that.</li>
+          </ul>
+        }
       />
 
       <Container
@@ -43,8 +56,8 @@ export default function({ updateGlobalState, history }) {
             title="Self Care & Habits"
             action={
               <Button
-                className="primary"
-                text={<i class="fas fa-thumbs-up" />}
+                className="transparent"
+                text={<i className="fas fa-thumbs-up" />}
               />
             }
           />
@@ -59,8 +72,8 @@ export default function({ updateGlobalState, history }) {
             title="Day in Review"
             action={
               <Button
-                className="primary"
-                text={<i class="fas fa-feather-alt" />}
+                className="transparent"
+                text={<i className="fas fa-feather-alt" />}
               />
             }
           />

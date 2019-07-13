@@ -1,3 +1,6 @@
+$primary: #007bff;
+$primary-light: lighten($primary, 10%);
+
 html {
   box-sizing: border-box;
 }
@@ -23,4 +26,9 @@ code {
 
 .muted {
   color: rgba(0, 0, 0, 0.6);
+}
+
+.inner {
+  max-width: 1024px;
+  margin: 0 auto;
 }

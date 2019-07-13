@@ -7,6 +7,8 @@ import Home from "./views/Home";
 import Loading from "./views/Loading";
 import Error from "./views/Error";
 
+import Button from "./components/Button";
+
 import "./App.scss";
 
 const App = () => {
@@ -28,7 +30,17 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Highkick</h1>
+        <div className="inner">
+          <Button
+            className="transparent"
+            text={<i className="fas fa-user" />}
+          />
+          <h1>Highkick</h1>
+          <Button
+            className="transparent"
+            text={<i className="fas fa-archive" />}
+          />
+        </div>
       </header>
       {VIEW_ROUTE}
     </div>
