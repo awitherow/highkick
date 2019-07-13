@@ -8,6 +8,7 @@ const initialAppState = {};
 
 const initialState = {
   ...initialAppState,
+  habits: {},
   status: "GO",
 };
 
