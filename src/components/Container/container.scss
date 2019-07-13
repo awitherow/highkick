@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 8px;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+
+  &--title,
+  &--body,
+  &--footer {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+  }
+
+  &--title,
+  &--body {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    text-align: left;
+  }
+
+  &--title {
+    font-size: 110%;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  &--body {
+    background: white;
+    flex-direction: column;
+  }
+
+  &--footer {
+    font-size: 85%;
+    padding: 4px 8px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+}

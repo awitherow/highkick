@@ -8,7 +8,7 @@ const initialAppState = {};
 
 const initialState = {
   ...initialAppState,
-  status: "LOADING",
+  status: "GO",
 };
 
 const useGlobal = useGlobalHook(React, initialState, actions);

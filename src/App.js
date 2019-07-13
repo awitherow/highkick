@@ -27,7 +27,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <header className="App-header">Highkick</header>
+      <header className="App-header">
+        <h1>Highkick</h1>
+      </header>
       {VIEW_ROUTE}
     </div>
   );

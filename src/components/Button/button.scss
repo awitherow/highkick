@@ -1,0 +1,12 @@
+.btn {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 0;
+
+  &.primary {
+    background: #007bff !important;
+    color: white !important;
+    border: 2px solid lighten(#007bff, 10%) !important;
+    padding: 4px 8px;
+    text-transform: uppercase;
+  }
+}
