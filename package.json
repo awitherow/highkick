@@ -6,7 +6,7 @@
     "apollo-boost": "^0.4.3",
     "flow-bin": "^0.102.0",
     "graphql": "^14.4.2",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "react": "^16.8.6",
     "react-apollo": "^2.5.8",
     "react-dom": "^16.8.6",
